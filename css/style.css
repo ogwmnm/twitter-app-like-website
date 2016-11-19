@@ -1,0 +1,58 @@
+body {
+  font-size: 14px;
+}
+
+.tab {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #2AA3EF;
+  border-radius: 6px;
+  list-style: none;
+}
+
+.tab li {
+  flex: 1;
+  text-align: center;
+  line-height: 33px;
+  color: #2AA3EF;
+}
+
+.tab li + li {
+  border-left: 1px solid #2AA3EF;
+}
+
+.tab .active {
+  background-color: #2AA3EF;
+  color: #fff;
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav li {
+  flex: 1;
+}
+
+.nav a {
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  color: #667785;
+}
+
+.nav .active a {
+  color: #2AA3EF;
+}

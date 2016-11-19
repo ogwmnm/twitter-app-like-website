@@ -1,20 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 14px;
+  padding-bottom: 70px;
+}
+
+.header {
+  position: relative;
+  padding: 14px 14px 46px;
+  min-height: 384px;
+  background-image: linear-gradient(#2AA3EF 132px, #fff 0);
+  border-bottom: 1px solid #C3CDD4;
+}
+
+.title {
+  margin: 186px 0 0 0;
+  font-size: 16px;
+}
+
+.domain {
+  margin: 6px 0 0 0;
+  font-size: 12px;
+  color: #AAB8C1;
+}
+
+.description {
+  margin: 12px 0 0 0;
 }
 
 .tab {
+  position: absolute;
+  right: 14px;
+  bottom: 6px;
+  left: 14px;
   display: flex;
   margin: 0;
   padding: 0;
   border: 1px solid #2AA3EF;
-  border-radius: 6px;
+  border-radius: 5px;
   list-style: none;
 }
 
 .tab li {
   flex: 1;
   text-align: center;
-  line-height: 33px;
+  line-height: 30px;
   color: #2AA3EF;
 }
 
@@ -38,6 +70,8 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  background-color: #fff;
+  border-top: 1px solid #C3CDD4;
   list-style: none;
 }
 
@@ -47,7 +81,8 @@ body {
 
 .nav a {
   display: block;
-  font-size: 12px;
+  padding: 6px 0;
+  font-size: 28px;
   text-decoration: none;
   text-align: center;
   color: #667785;
@@ -55,4 +90,9 @@ body {
 
 .nav .active a {
   color: #2AA3EF;
+}
+
+.nav-text {
+  display: block;
+  font-size: 11px;
 }

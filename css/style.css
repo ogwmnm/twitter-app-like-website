@@ -118,6 +118,7 @@ a {
 .section {
   position: relative;
   padding: 14px 14px 14px 78px;
+  min-height: 82px;
 }
 
 .section::after {

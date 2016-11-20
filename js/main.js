@@ -37,11 +37,12 @@
 
   /*  Twitter 埋め込みタイムラインの高さ調整
   ---------------------------------------------*/
-  var intervalId,
-      nav = document.getElementById("js-nav"),
-      yNav = nav.getBoundingClientRect().top;
+  var intervalId, yNav,
+      nav = document.getElementById("js-nav");
 
   if (nav != null) {
+    yNav = nav.getBoundingClientRect().top;
+
     setInterval(function() {
 
       var timeline = document.getElementById("twitter-widget-0");

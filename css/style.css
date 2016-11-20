@@ -2,6 +2,7 @@
 -----------------------------*/
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
@@ -202,8 +203,18 @@ a {
   color: #667785;
 }
 
-.nav .active a {
+.nav .active a,
+.nav .tapped {
   color: #2AA3EF;
+}
+
+.nav-icon {
+  transform-origin: center bottom;
+  transition: transform .15s;
+}
+
+.nav .tapped .nav-icon {
+  transform: scale(.85);
 }
 
 .nav-text {

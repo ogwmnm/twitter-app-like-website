@@ -2,9 +2,11 @@
 
   "use strict";
 
+
+  /*  リンクをタップしたら tapped クラスをつける
+  ---------------------------------------------*/
   var i, link,
-      linkList = document.getElementsByTagName("a"),
-      btnList = document.getElementsByTagName("button");
+      linkList = document.getElementsByTagName("a");
 
   for (i = 0; i < linkList.length; i++) {
     link = linkList[i];
@@ -31,6 +33,26 @@
     setTimeout(function() {
       that.classList.remove("tapped");
     }, 100);
+  }
+
+  /*  Twitter 埋め込みタイムラインの高さ調整
+  ---------------------------------------------*/
+  var intervalId,
+      nav = document.getElementById("js-nav"),
+      yNav = nav.getBoundingClientRect().top;
+
+  if (nav != null) {
+    setInterval(function() {
+
+      var timeline = document.getElementById("twitter-widget-0");
+
+      if (timeline == null) {
+        return;
+      }
+
+      timeline.style.height = yNav + "px";
+
+    }, 1000);
   }
 
 })();

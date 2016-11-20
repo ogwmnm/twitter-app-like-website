@@ -41,6 +41,40 @@ body {
   left: 10px;
 }
 
+.header-link {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-link li {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.header-link li + li {
+  margin-left: 14px;
+}
+
+.header-link-top {
+  position: absolute;
+  top: 24px;
+  right: 14px;
+}
+
+.header-link-top a {
+  color: #fff;
+}
+
+.header-link-bottom {
+  position: absolute;
+  top: 144px;
+  right: 14px;
+}
+
+.header-link-bottom a {
+  color: #667785;
+}
 
 /*  タブ（ヘッダー内）
 -----------------------------*/

@@ -1,12 +1,17 @@
+/*  リセット
+-----------------------------*/
 * {
   box-sizing: border-box;
 }
 
 body {
   font-size: 14px;
-  padding-bottom: 70px;
+  padding-bottom: 64px;
 }
 
+
+/*  ヘッダー
+-----------------------------*/
 .header {
   position: relative;
   padding: 14px 14px 46px;
@@ -15,15 +20,19 @@ body {
   border-bottom: 1px solid #C3CDD4;
 }
 
-.title {
+.header-title {
   margin: 186px 0 0 0;
   font-size: 16px;
 }
 
-.domain {
+.header-domain {
   margin: 6px 0 0 0;
   font-size: 12px;
   color: #AAB8C1;
+}
+
+.header-description {
+  margin: 12px 0 0 0;
 }
 
 .header .site-icon {
@@ -32,10 +41,9 @@ body {
   left: 10px;
 }
 
-.description {
-  margin: 12px 0 0 0;
-}
 
+/*  タブ（ヘッダー内）
+-----------------------------*/
 .tab {
   position: absolute;
   right: 14px;
@@ -65,6 +73,68 @@ body {
   color: #fff;
 }
 
+
+/*  メインコンテンツ
+-----------------------------*/
+.section {
+  position: relative;
+  padding: 14px 14px 14px 78px;
+}
+
+.section::after {
+  content: "\f078";
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  font-size: 12px;
+  font-family: "FontAwesome";
+  color: #AAB8C1;
+}
+
+.section + .section {
+  border-top: 1px solid #C3CDD4;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.section-meta {
+  position: absolute;
+  top: 14px;
+  right: 32px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.section-meta li {
+  display: inline-block;
+  font-size: 11px;
+  color: #AAB8C1;
+}
+
+.section-meta li + li::before {
+  content: "・";
+}
+
+.section .site-icon {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+.section-content {
+  margin: 4px 0 0 0;
+}
+
+
+/*  ナビゲーション
+-----------------------------*/
 .nav {
   position: fixed;
   right: 0;
@@ -103,6 +173,9 @@ body {
   font-size: 11px;
 }
 
+
+/*  サイトアイコン
+-----------------------------*/
 .site-icon {
   display: inline-block;
   width: 80px;
@@ -111,4 +184,11 @@ body {
   background-position: center center;
   border: 4px solid #fff;
   border-radius: 8px;
+}
+
+.site-icon-small {
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 4px;
 }
